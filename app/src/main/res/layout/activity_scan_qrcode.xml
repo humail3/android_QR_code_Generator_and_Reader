@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".ScanQRCodeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <eu.livotov.labs.android.camview.ScannerLiveView
+        android:id="@+id/camView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/scannedData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/copyButton"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black_shade_1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Scanned Data Appear Here"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/copyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_back"
+        android:text="Copy"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/selectImage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_back"
+        android:text="Select Image"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
